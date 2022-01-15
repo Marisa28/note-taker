@@ -5,7 +5,7 @@ const db = require('./db/db.json');
 // Helper method for generating unique ids
 const uuid = require('./helpers/uuid');
 const publicDir = path.join(__dirname, "/public");
-const PORT = 3001;
+const PORT = process.env.PORT || 3001 ;
 
 const app = express();
 
